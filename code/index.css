@@ -154,11 +154,7 @@ nav ul li a:hover{
     text-align: center;
     margin:auto;
 }
-.All-image img:hover{
-    background:rgba(255, 255, 255, 0.965);
-    cursor: pointer;
-    color: #000;
-}
+
 .section-2 picture h1{
     position: relative;
     right: 30px;
@@ -368,11 +364,8 @@ footer ul li a:hover{border-bottom: 2px solid var(--nutural-white);}
         position: absolute;
         margin: 100px 100px 15px;
     }
-    .tittle__section-2 h1{
-        font-size:2rem;
-    }
+    .tittle__section-2 h1{font-size:2rem;}
     .links_social_media{
-        /*background-color: aqua;*/
         margin-top: 130px;
         display: block;
         text-align: center;
