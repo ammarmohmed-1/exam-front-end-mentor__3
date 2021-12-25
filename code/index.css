@@ -1,0 +1,380 @@
+/* fonts Google */
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+
+h1,h2{font-family: 'Josefin Sans', sans-serif;}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --h1:3.5rem;
+    --h2:2.7rem;
+    --remove-left:163px;
+    --nutural-white:hsl(0, 0%, 100%);
+    --black:hsl(0, 0%, 0%);
+    --Dark-Gray:hsl(0, 0%, 55%);
+}
+body{
+    font-family: 'Alata', sans-serif;
+    max-width: 1440px;
+    height:auto;
+}
+#toggle_open,#toggle_close, .navbar-pround{display: none;}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Style The Header @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+header{
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-repeat:no-repeat;
+    position: relative;
+    height: 115vh;
+    width: 100%;
+}
+.logo{
+    padding:60px var(--remove-left);
+    z-index: 11;
+    position: absolute;
+}
+nav{
+    position: absolute;
+    right: 10px;
+    top: 66px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin:0px var(--remove-left) ;
+}
+nav ul li{
+    margin-left: 29px;
+    font-size: 1.1rem;
+}
+nav ul li a{
+    color: var(--nutural-white);
+    text-decoration: none;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid var(--nutural-white);
+    border-radius:2px;
+    transition: all 0.2s;
+}
+/* style the intro */
+.intro{
+    border: 1px solid var(--nutural-white);
+    width: 550px;
+    height: 242px;
+    margin-left: var(--remove-left);
+    position:absolute;
+    top: 210px;
+}
+.intro h1{
+    display:flex;
+    color: var(--nutural-white);
+    font-size:var(--h1);
+    font-weight: 100;
+    max-width: 485px;
+    text-transform: uppercase;
+    padding: 40px;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End Style The Header @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Style The section-1 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.section-1{
+    margin:var(--remove-left) 0px 0px 0px;
+    overflow: hidden;
+}
+.section-1 img{
+    display: flex;
+    margin-left:var(--remove-left);
+}
+.intro-section_VR{
+    background-color: #ffff;
+    position:relative;
+    left: 55%;
+    bottom: 300px;
+    width:593px;
+    height: 351px;
+    padding: 98px;
+}
+.intro-section_VR h1{
+    font-weight: 100;
+    font-size: var(--h2);
+    text-transform: uppercase;
+}
+.intro-section_VR p{
+    display:inline-block;
+    width: 114%;
+    margin-top: 53px;
+    line-height: 25px;
+    color: var(--Dark-Gray);
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End Style The section-1 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Style The section-2 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/* Start style the part one << btn && tittle */
+.section-2{margin-bottom:220px;}
+
+.tittle__section-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.tittle__section-2 h1{
+    font-size: var(--h1);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin:0px 0px 91px var(--remove-left);
+}
+.btn{
+    width: 159px;
+    height: 35px;
+    background: none;
+    cursor: pointer;
+    border:1px solid var(--black);
+}
+.btn-black{
+    text-transform: uppercase;
+    margin:0px var(--remove-left) 90px 0px;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+}
+.btn-black:hover{
+    transition: all 0.3s;
+    background-color:var(--black);
+    color: var(--nutural-white);
+}
+/* Start style the part two <<  images*/
+.All-image{
+    display: grid;
+    grid-template-columns:repeat(4 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    grid-gap:31px;
+    align-items: center;
+    text-align: center;
+    margin:auto;
+}
+.All-image img:hover{
+    background:rgba(255, 255, 255, 0.965);
+    cursor: pointer;
+    color: #000;
+}
+.section-2 picture h1{
+    position: relative;
+    right: 30px;
+    bottom: 90px;
+    text-transform: uppercase;
+    color:var(--nutural-white);
+    z-index: 666;
+    font-size:2rem;
+    font-weight: 100;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End Style The section-2 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Style The Footer @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+footer{
+    background-color: var(--black);
+    height: 165px;
+    padding: 57px 160px;
+}
+footer ul{display: flex; list-style: none;}
+footer ul li{margin:13px 0px 0px 30px;}
+footer ul li a{text-decoration: none; color: var(--nutural-white);}
+footer ul li a:hover{border-bottom: 2px solid var(--nutural-white);}
+.links_social_media{ float:right;  margin-top:-50px;}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End Style The Footer @@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+/*######################################## start style the responsive desing ######################################*/
+/* Start style The responsive header < navbar menue */
+@media screen and (max-width:945px){
+    :root{--remove-left:63px;}
+    
+}
+@media screen and (max-width:751px){
+    :root{--remove-left:3px;}
+    header{
+        background-image: url("../images/mobile/image-hero.jpg");
+        background-repeat:no-repeat;
+        position: relative;
+        height: 190vh;
+        width: 100%;
+    }
+    .intro{
+        margin: auto;
+        width: 76%;
+        height: auto;
+        left: 15px;
+        left: 5%;
+    }
+    .intro h1{
+        width: 15px;
+    }
+}
+@media screen and (max-width:656px){
+    .intro{width: 330px;}
+
+    .intro h1{
+        display: inline-block;
+        padding: 15px;
+        font-size: 2.5rem;
+    }
+    .navbar-pround{display: none;}
+    #toggle_open{
+        display: block;
+        position: absolute;
+        right: 10%;
+        top: 87px;
+        cursor: pointer;
+    }
+    #toggle_close{display: block;}
+
+    #toggle_close img{
+        float: right;
+        width: 25px;
+        height:auto;
+        margin: -310px 74px;
+        cursor: pointer;
+    }
+    .logo{padding:80px 51px;}
+
+    .navbar_block{ 
+        z-index: 9;
+        top: 0px;
+        right: 0px;
+        background-color: #000;
+        width: 100%;
+        min-height:180vh;
+        max-height:auto;
+        transition: all 0.5s;
+    }
+    .navbar_none{
+        top: 100%;
+        left: 0px;
+        transition: all 0.5s;
+        visibility:hidden;
+    }
+    nav ul {
+        display: block;
+        padding-top:350px;
+    }
+    nav ul li{
+        margin-top: 40px;
+        font-size: var(--h2);
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+}
+@media screen and (max-width:380px){
+    .intro{width:250px;}
+    .intro h1{
+        display: inline-block;
+        padding: 15px;
+        font-size: 2rem;
+    }
+}
+
+
+/* Start Style The responsive section-1 */
+@media screen and (max-width:1244px){
+    .section-1{margin:163px 0px 0px 0px;}
+    .intro-section_VR{
+        display: inline-block;
+        right: 0%;
+        bottom: 300px;
+        width:593px;
+        height: 401px;
+        padding: 18px;
+    }
+    .intro-section_VR p{ max-width: 69%; }
+}
+@media screen and (max-width:934px){
+
+    .section-1{margin-bottom: 210px;}
+    .section-1 img{margin: auto; width:90%;}
+    .intro-section_VR{
+        display: block;
+        margin: 28rem auto;
+        left: 0px;
+        text-align: center;
+        inline-size: auto;
+        max-width: 514px;
+    }
+}
+@media screen and (max-width:305px){
+   .intro-section_VR h1{font-size: 2rem}
+}
+/* Start Style The responsive section-2 */
+@media screen and (max-width:1135px){
+    .All-image{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3 , 1fr);
+    }
+}
+@media screen and (max-width:845px){
+    .All-image{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3 , 1fr);
+        margin: auto;
+    }
+}
+@media screen and (max-width:550px){
+    .All-image{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 1fr;
+        margin: auto;
+        overflow: hidden;
+    }
+    .All-image h1{
+        float: left;
+        margin-left:91px;
+    }
+    .All-image img{
+        width: 95%;
+    }
+}
+@media screen and (max-width:325px){
+.All-image picture h1{
+    font-size: 1.5rem;
+}
+}
+
+/* Start Style  The responsive footer */
+@media screen and (max-width:929px){
+    .navbar-pround{
+        text-align: center;
+    }
+    footer{
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    footer ul{
+        display: block;
+        text-align: center;
+    }
+    .links_social_media{
+        display: flex;
+        margin: auto;
+    }
+}
+@media screen and (max-width:420px){
+    .btn-black{
+        position: absolute;
+        margin: 100px 100px 15px;
+    }
+    .tittle__section-2 h1{
+        font-size:2rem;
+    }
+    .links_social_media{
+        /*background-color: aqua;*/
+        margin-top: 130px;
+        display: block;
+        text-align: center;
+    }  
+}
